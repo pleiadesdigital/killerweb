@@ -108,6 +108,15 @@ h1 {
 	word-spacing: 4px;
 	letter-spacing: 3px;
 }
+
+/*------------------------------*/
+/* FEATURES */
+/*------------------------------*/
+.section-features .long-copy {
+	margin-bottom: 20px;
+}
+
+/* Titles */
 h2 {
 	font-size: 180%;
 	word-spacing: 2px;
@@ -169,4 +178,37 @@ h3 {
 	border-bottom: 2px solid #b14600;
 }
 
+/*------------------------------*/
+/* MEALS */
+/*------------------------------*/
 
+.section-meal {
+	padding: 0px;
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+} /* meals-showcase */
+.meals-showcase li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+.meal-photo {
+	width: 100%;
+	margin: 0px;
+	overflow: hidden;
+	background-color: #000000;
+}
+.meal-photo img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+	transform: scale(1.05);
+	opacity: 1;
+}
