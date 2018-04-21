@@ -39,7 +39,6 @@ section {
 	padding: 1%;
 }
 
-
 /* Icons */
 .icon-big {
 	font-size: 350%;
@@ -47,7 +46,34 @@ section {
 	color: #b14600;
 	margin-bottom: 10px;
 }
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #b14600;
+	font-size: 120%;
 
+	/* secrets to align text and icons */
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 5px;
+}
+
+/* Links */
+a:link, 
+a:visited {
+	color: #b14600;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #b14600;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover, 
+a:active {
+	color: #555555;
+	border-bottom: 1px solid transparent;
+}
 
 /* Buttons */
 .btn:link,
@@ -258,11 +284,30 @@ h3 {
 	font-size: 150%;
 	margin-right: 25px; 
 }
-
+.btn-app:link, 
+.btn-app:visited {
+	border: none;
+}
 .btn-app img {
 	height: 50px;
 	width: auto;
 	margin-right: 10px;
 }
 
+/*------------------------------*/
+/* CITIES */
+/*------------------------------*/
 
+.box img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+.city-feature, 
+.city-chef, 
+.city-twitter {
+	margin-bottom: 5px;
+}
+.icon-small {
+
+}
