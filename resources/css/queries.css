@@ -30,7 +30,6 @@
   .main-nav > li {
     margin-left: 30px;
   }
-
   .steps-box,
   .steps-box:first-child {
     margin-top: 10px;
@@ -88,6 +87,44 @@
   }
 
   .main-nav { display: none; }
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+  .main-nav {
+    float: left;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  .main-nav li {
+    display: block;
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: none;
+    padding: 10px 0px;
+    font-size: 100%;
+  }
+
+  /* STICKY NAV */
+
+  .sticky .main-nav {
+    margin-top: 10px;
+    float: left;
+  }
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0px;
+  }
+  .sticky .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .sticky .mobile-nav-icon i {
+    color: #555555;
+  }
+
+
+
 
   h1 { font-size: 180%; }
   h2 { font-size: 150%; }

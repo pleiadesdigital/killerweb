@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
+		<meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/style-min.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 		<title>Pleiades 2018</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="http://localhost/~ronyortiz/training2017/killerweb/resources/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="http://localhost/~ronyortiz/training2017/killerweb/resources/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="http://localhost/~ronyortiz/training2017/killerweb/resources/favicons/favicon-16x16.png">
+		<link rel="manifest" href="http://localhost/~ronyortiz/training2017/killerweb/resources/favicons/site.webmanifest">
+		<link rel="mask-icon" href="http://localhost/~ronyortiz/training2017/killerweb/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="http://localhost/~ronyortiz/training2017/killerweb/resources/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -24,30 +34,34 @@
 		<header class="site-header">
 			<nav>
 				<div class="row">
-					<a href="http://localhost/~ronyortiz/training2017/killerweb/"><img src="resources/img/logo-white.png" alt="Logo Fictional Company" class="logo"></a>
-					<ul class="main-nav">
-						<li><a href="#">Food delivery</a></li>
-						<li><a href="#">How it works</a></li>
-						<li><a href="#">Our cities</a></li>
-						<li><a href="#">Sign Up</a></li>
+					<a href="http://localhost/~ronyortiz/training2017/killerweb/">
+						<img src="resources/img/logo-white.png" alt="Logo Fictional Company" class="logo">
+						<img src="resources/img/logo.png" alt="Logo Fictional Company" class="logo-black">
+					</a>
+					<ul class="main-nav js--main-nav ">
+						<li><a href="#features">Food delivery</a></li>
+						<li><a href="#works">How it works</a></li>
+						<li><a href="#cities">Our cities</a></li>
+						<li><a href="#plans">Sign Up</a></li>
 					</ul>
-				</div>
+					<!-- Responsive Menu Link -->
+					<a class="mobile-nav-icon js--nav-icon"><i class="ion-android-menu"></i></a></div>
 			</nav>
 			<div class="hero-text-box">
 				<h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-				<a class="btn btn-full" href="#">I’m hungry</a>
-				<a class="btn btn-ghost" href="#">Show me more</a>
+				<a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+				<a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
 			</div>
 		</header>
 
 		<!-- FEATURES -->
-		<section class="section-features">
+		<section class="section-features js--section-features" id="features">
 			<div class="row">
 				<h2>Get food fast &mdash; not fast food</h2>
 				<p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
 			</div>
 			<!-- using the grid -->
-			<div class="row">
+			<div class="row js--wp-1">
 				<div class="col span-1-of-4 box">
 					<i class="ion-ios-infinite-outline icon-big"></i>
 					<h3>Up to 365 days/year</h3>
@@ -73,6 +87,7 @@
 
 		<!-- MEALS -->
 		<section class="section-meal">
+			<h2 style="display: none">Meals</h2>
 			<ul class="meals-showcase clearfix">
 				<li>
 					<figure class="meal-photo">
@@ -120,12 +135,12 @@
 		</section><!-- class="section-meal" -->
 
 		<!-- STEPS -->
-		<section class="section-steps">
+		<section class="section-steps" id="works">
 			<div class="row">
 				<h2>How it works &mdash; Simple as 1, 2, 3</h2>
 			</div><!-- class="row" -->
 			<div class="row">
-				<div class="col span-1-of-2 steps-box">
+				<div class="col span-1-of-2 steps-box js--wp-2">
 					<img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
 				</div>
 				<div class="col span-1-of-2 steps-box">
@@ -148,13 +163,13 @@
 		</section><!-- class="section-meal" -->
 
 		<!-- CITIES -->
-		<section class="section-cities">
+		<section class="section-cities" id="cities">
 			<!-- titles -->
 			<div class="row">
 				<h2>We're currently in these cities</h2>
 			</div>
 			<!-- 4 cities -->
-			<div class="row">
+			<div class="row js--wp-3">
 
 				<div class="col span-1-of-4 box">
 					<img src="resources/img/lisbon-3.jpg" alt="Lisbon">
@@ -223,13 +238,7 @@
 						<a href="#">@omnifood_london</a>
 					</div><!-- class="city-feature" -->
 				</div><!-- class="col span-1-of-4 box" -->
-
-
-
 			</div><!-- class="row" -->
-
-
-
 		</section><!-- class="section-cities" -->
 
 		<!-- TESTIMONIALS -->
@@ -271,13 +280,13 @@
 		</section><!-- class="section-testimonials" -->
 
 		<!-- PLANS -->
-		<section class="section-plans">
+		<section class="section-plans js--section-plans" id="plans">
 			<div class="row">
 				<h2>Start eating healthy today</h2>
 			</div>
 			<div class="row">
 
-				<div class="col span-1-of-3">
+				<div class="col span-1-of-3 js--wp-4">
 					<div class="plan-box">
 						<div>
 							<h3>Premium</h3>
@@ -443,6 +452,9 @@
 
 		</footer>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	<script src="resources/js/script.js"></script>
 
 	</body>
 </html>
